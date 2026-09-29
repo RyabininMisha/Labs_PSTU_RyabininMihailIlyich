@@ -23,4 +23,4 @@
 | 1 | 1 | 10 | - |
 | 1 | 2 | 1 | - |
 
-![:)](https://i.pinimg.com/originals/3f/7c/27/3f7c2737b45ac59fa1868caa592ae8e1.jpg?nii=t)
+![:)](file:///C:/Users/Владелец/Desktop/буга%20гага/молния.jpg)
