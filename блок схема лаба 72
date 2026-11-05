@@ -1,0 +1,156 @@
+<mxfile host="app.diagrams.net" modified="2024-10-23T12:00:00.000Z" agent="5.0 (Windows NT)" etag="GigaChat_Schema_v2" version="22.1.14" type="device">
+  <diagram id="id2" name="Page-1">
+    <mxGraphModel dx="1400" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Main Flow -->
+        <mxCell id="main_start" value="&lt;b&gt;Начало&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="main_title" value="&lt;b&gt;Вывод:&lt;/b&gt;&lt;br&gt;Окружность x^2 + y^2 &lt;= R^2, R = 5.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call1_title" value="&lt;b&gt;Вызов 1:&lt;/b&gt;&lt;br&gt;belong(3, R, 3.0, 4.0)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;dashed=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="150" width="200" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call1_res1" value="&lt;i&gt;Вывод:&lt;/i&gt;&lt;br&gt;Точка (3, 4) принадлежит... да" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="140" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call1_res2" value="&lt;i&gt;Вывод:&lt;/i&gt;&lt;br&gt;belong вернула: 1 точку из 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="140" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call2_title" value="&lt;b&gt;Вызов 2:&lt;/b&gt;&lt;br&gt;belong(9, R, 3.0, 4.0, 6.0, 0.0, 1.0, 1.0, 4.0, 4.0)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;dashed=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call2_pts" value="&lt;i&gt;Вывод:&lt;/i&gt;&lt;br&gt;Точки: (3,4), (6,0), (1,1), (4,4)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call2_res" value="&lt;i&gt;Вывод:&lt;/i&gt;&lt;br&gt;belong вернула: 3 точки из 4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="240" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call3_title" value="&lt;b&gt;Вызов 3:&lt;/b&gt;&lt;br&gt;belong(11, R, 3.0, 4.0, 6.0, 0.0, 1.0, 1.0, 4.0, 4.0, 0.0, 0.0)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;dashed=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call3_pts" value="&lt;i&gt;Вывод:&lt;/i&gt;&lt;br&gt;Точки: (3,4), (6,0), (1,1), (4,4), (0,0)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="340" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="call3_res" value="&lt;i&gt;Вывод:&lt;/i&gt;&lt;br&gt;belong вернула: 4 точек из 5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="340" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="main_end" value="&lt;b&gt;Конец&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="900" y="450" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Function in_circle -->
+        <mxCell id="func_circle" value="&lt;b&gt;Функция in_circle(x, y, R)&lt;/b&gt;" style="swimlane;fontStyle=0;horizontal=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="900" y="50" width="280" height="160" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="circle_check" value="x*x + y*y &lt;= R*R?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="90" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="circle_true" value="return true" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="70" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="circle_false" value="return false" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="130" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Function belong -->
+        <mxCell id="func_belong" value="&lt;b&gt;Функция belong(k, ...)&lt;/b&gt;" style="swimlane;fontStyle=0;horizontal=1;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="900" y="250" width="320" height="360" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_va_start" value="va_start(ap, k)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="290" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_get_R" value="R = va_arg(ap, double)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="350" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_init" value="count = 0&lt;br&gt;i = 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="410" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_loop" value="i + 1 &lt; k?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="470" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_get_x" value="x = va_arg(ap, double)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="460" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_get_y" value="y = va_arg(ap, double)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="520" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_check_pt" value="in_circle(x, y, R)?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="570" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_inc_cnt" value="count++" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="580" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_inc_i" value="i += 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="660" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_va_end" value="va_end(ap)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="720" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="belong_return" value="return count" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="930" y="780" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges (Connections) -->
+        <mxCell id="e1" source="main_start" target="main_title" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" source="main_title" target="call1_title" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" source="call1_title" target="call1_res1" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" source="call1_res1" target="call1_res2" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" source="call1_res2" target="call2_title" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" source="call2_title" target="call2_pts" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" source="call2_pts" target="call2_res" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" source="call2_res" target="call3_title" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" source="call3_title" target="call3_pts" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" source="call3_pts" target="call3_res" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" source="call3_res" target="main_end" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e12" source="func_circle" target="circle_check" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" source="circle_check" target="circle_true" edge="1" parent="1" style="startArrow=oval;endArrow=block;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e14" source="circle_check" target="circle_false" edge="1" parent="1" style="startArrow=diamond;endArrow=block;"><mxGeometry as="geometry"><mxPoint x="1080" y="130" as="targetPoint"/></mxGeometry></mxCell>
+
+        <mxCell id="e15" source="func_belong" target="belong_va_start" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e16" source="belong_va_start" target="belong_get_R" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e17" source="belong_get_R" target="belong_init" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e18" source="belong_init" target="belong_loop" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e19" source="belong_loop" target="belong_get_x" edge="1" parent="1" style="startArrow=oval;endArrow=block;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e20" source="belong_loop" target="belong_va_end" edge="1" parent="1" style="startArrow=diamond;endArrow=block;"><mxGeometry as="geometry"><mxPoint x="930" y="720" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="e21" source="belong_get_x" target="belong_get_y" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e22" source="belong_get_y" target="belong_check_pt" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e23" source="belong_check_pt" target="belong_inc_cnt" edge="1" parent="1" style="startArrow=oval;endArrow=block;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e24" source="belong_check_pt" target="belong_inc_i" edge="1" parent="1" style="startArrow=diamond;endArrow=block;"><mxGeometry as="geometry"><mxPoint x="930" y="660" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="e25" source="belong_inc_cnt" target="belong_inc_i" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e26" source="belong_inc_i" target="belong_loop" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e27" source="belong_va_end" target="belong_return" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
